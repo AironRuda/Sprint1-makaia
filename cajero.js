@@ -18,7 +18,7 @@ class User {
     this.type = _type;
   }
   /**
-   * compara contra ingresada con contra propia del objeto usuario
+   * Función que compara contraseña ingresada con contraseña propia del objeto usuario
    * @param {int} test
    * @returns, "true" si coinciden, "false" si no coinciden
    */
@@ -96,7 +96,7 @@ class Atm {
   }
 
   /**
-   * Metodo que extra billetes del monto disponible en el cajero
+   * Método que extra billetes del monto disponible en el cajero
    *
    * @param {int} amount
    */
@@ -134,7 +134,7 @@ class Atm {
           break;
         }
       }
-      console.log(
+      alert(
         "Se retiraron " +
           contBill5 +
           " billetes de 5k, " +
@@ -147,7 +147,7 @@ class Atm {
           contBill100 +
           " billetes de 100k"
       );
-      console.log(
+      alert(
         "Para un total de " +
           (contBill5 * 5 +
             contBill10 * 10 +
@@ -157,9 +157,7 @@ class Atm {
           "k"
       );
     } else {
-      console.log(
-        "No hay suficiente dinero, el cajero solo cuenta con: " + totalMax
-      );
+      alert("No hay suficiente dinero, el cajero solo cuenta con: " + totalMax);
     }
   }
 }
@@ -172,7 +170,11 @@ let people = [
   new User("Dayan", 789, 789, 2),
   new User("Vanessa", 741, 741, 2),
 ];
-
+/**
+ * Función que busca id en lista de usuarios
+ * @param {int} id
+ * @returns true, si encuentra coincidencia, false, si No encuentra coincidencia
+ */
 function search(id) {
   return people.find((p) => p.id === id);
 }
