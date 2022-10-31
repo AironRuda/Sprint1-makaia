@@ -61,7 +61,7 @@ class Atm {
     this.bill_20 += bill20;
     this.bill_50 += bill50;
     this.bill_100 += bill100;
-    console.log(
+    alert(
       "Se ingresaron " +
         bill5 +
         " billetes de 5k, " +
@@ -74,7 +74,7 @@ class Atm {
         bill100 +
         " billetes de 100k"
     );
-    console.log(
+    alert(
       "Para un total de " +
         (bill5 * 5 + bill10 * 10 + bill20 * 20 + bill50 * 50 + bill100 * 100) +
         "k"
@@ -207,12 +207,14 @@ function main() {
             prompt("Cantidad de billetes de 100k que va a ingresar")
           );
           atm.addCash(bill5, bill10, bill20, bill50, bill100);
+          alert("Regrese pronto");
         } else {
           alert("Ingresó como CLIENTE: " + user.name);
           let withdrawMoney = parseInt(
             prompt("Cantidad de dinero que va a RETIRAR")
           );
           atm.withdraw(withdrawMoney);
+          alert("Regrese pronto");
         }
         user = null;
       } else {
