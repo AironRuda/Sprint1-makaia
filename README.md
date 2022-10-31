@@ -7,7 +7,7 @@
 </ul>
 
 <hr>
-Funcionamiento
+# Funcionamiento
 
 Se le debe ingresar al programa el id de un usuario, si el usuario no está registrado se indicará en pantalla, de lo contrario se procede a pedir la contraseña registrada del usuario, si la contraseña es incorrecta, se indica en pantalla, de lo contrario se identifica que tipo de usuario es en pantalla y procede de diferente manera si el usuario es administrador o cliente.
 En el arreglo de usuarios se registraron 4 perfiles, en los que se identifica el nombre, id, contraseña y tipo de usuario (1. Administrador, 2. Cliente)
@@ -40,7 +40,7 @@ En el arreglo de usuarios se registraron 4 perfiles, en los que se identifica el
     	pass: 741
     	type: 2
 
-Usando el id y las contraseñas se puede ingresar, en caso de ser un usuario:
+Usando el id y las contraseñas correctamente se puede ingresar, en caso de ser un usuario:
 
 ### Administrador
 
