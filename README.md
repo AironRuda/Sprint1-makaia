@@ -7,6 +7,7 @@
 </ul>
 
 <hr>
+
 # Funcionamiento
 
 Se le debe ingresar al programa el id de un usuario, si el usuario no está registrado se indicará en pantalla, de lo contrario se procede a pedir la contraseña registrada del usuario, si la contraseña es incorrecta, se indica en pantalla, de lo contrario se identifica que tipo de usuario es en pantalla y procede de diferente manera si el usuario es administrador o cliente.
